@@ -1,6 +1,6 @@
 let request=require("request")  //importing request.
 let cheerio=require("cheerio")  // importing cheerio.
-let fs=require("fs")  // importing cheerio.
+let fs=require("fs")  // importing fs module
 
 var url1='https://www.espncricinfo.com/series/2020-21-12510595/royal-chalengers-bangalore-vs-sunrisers-hyderabad-eliminator-1237178/full-scorecard'
 var url2='https://www.espncricinfo.com/series/ipl-2020-21-1210595/royal-challengers-bangalore-vs-sunrisers-hyderabad-eliminator-1237178/ball-by-ball-commentary'
@@ -51,7 +51,7 @@ function dataExtractor1(html){  //search tool
     let highestWickets=0;
     for(let i=0;i<bowlers.length;i++){
       let cols=searchTool(bowlers[i]).find('td');
-      let bowlerName=searchTool(cols[0]).text()
+      let bowlerName=searchTool(cols[0]).text();    //whenever index is used searTool is used again.
       let bowlerWickets=searchTool(cols[4]).text()
       
       console.log(bowlerName+"\t"+bowlerWickets)

@@ -1,6 +1,6 @@
 let request=require("request")  //importing request.
 let cheerio=require("cheerio")  // importing cheerio.
-let fs=require("fs")  // importing cheerio.
+let fs=require("fs")  // importing fs module
 
 var url1='https://www.espncricinfo.com/series/ipl-2020-21-1210595/royal-challengers-bangalore-vs-sunrisers-hyderabad-eliminator-1237178/full-scorecard'
 // url of webpages
