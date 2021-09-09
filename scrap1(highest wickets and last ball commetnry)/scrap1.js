@@ -1,11 +1,4 @@
-// |________________________________________________________________________________________________|
-// |About:--                                                                                        |
-// |this is the program to extract last ball delivery commentonry from espn cricinfo website        |
-// |this program also extracts all bolwers of the match and their respective wickets and            |
-// |        calculates the highest wicket taker                                                     |
-// |the program uses the module 'request' to request data from the webpage and then makes use of    |
-// |        the cheerio module for data extraction from the requested webpage                       |
-// |________________________________________________________________________________________________|
+
 
 let request=require("request")  //importing request.
 let cheerio=require("cheerio")  // importing cheerio.
